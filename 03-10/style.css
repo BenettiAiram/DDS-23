@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  background-color: lightblue;
+}
+
+/* Estilização por tags */
+
+ul {
+  background-color: aqua;
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 799px;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Estilização por ID */
+#caixa-verde {
+  background-color: rgb(147, 245, 228);
+  padding: 100px;
+  margin: 20px;
+}
+#caixa-roxa {
+  background-color: rgb(214, 180, 247);
+}
+/* Estilização por classe */
+.caixinha {
+  background-color: rgb(253, 253, 253);
+  color: black;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  margin: 50px 40px 30px 20px;
+}
