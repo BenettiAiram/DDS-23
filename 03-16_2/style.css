@@ -1,0 +1,100 @@
+/* seleciona todos os elementos do site */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* seleciona por tag */
+body{
+    background-color: azure;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+/* seleciona elementos <p> dentro de <div> */
+div p{
+    color: blue;
+}
+/* seleciona elementos <p> que estão LOGO APÓS <h3> */
+h3 + p{
+    color: red;
+    font-weight: bold;
+}
+h4 ~ p{
+    background-color: blueviolet;
+    color: yellow;
+}
+/* seleciona por atributo específico */
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+a[href*= "microsoft"]{
+    color: green;
+    font-weight: 50px;
+}
+a[href*= "google"]{
+    color: red;
+    font-weight: 50px;
+}
+h5, h6{
+    color: purple;
+}
+div#painel{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* seleciona por id */
+#topo{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+#caixa-unica{
+    background-color: #ede9fe;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+/* seleciona filho dentro de filho */
+#menu ul li a{
+    color: violet;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* seleciona por classe */
+.descricao{
+    font-style: italic;
+}
+/* estiliza elementos com a class bloco */
+.bloco{
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+/* estiliza elementos com a class destaque */
+.destaque{
+    background-color: gold;
+}
+.texto-destaque{
+    font-weight: bold;
+    color: darkred;
+}
+/* seleciona elementos <p> que são filhos DIRETOS da class específica */
+.pai-direto > p{
+    color: green;
+    padding: 5px;
+}
+/* seleciona elementos que têm as duas classes */
+.botao.ativo{
+    color: aqua; /* rgb(0, 83, 83); */
+    padding: 50px;
+}
+.p.aviso{
+    color: chartreuse;
+}
