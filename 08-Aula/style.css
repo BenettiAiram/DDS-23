@@ -1,0 +1,147 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+@font-face{
+    src: url("./Fonts/Iosevka.ttf");
+    font-family: "Iosevka";
+}
+/* usando a fonte Iosevka */
+p{
+    font-family: "Iosevka";
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 700;
+}
+/* Estilizei por tag */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+/* Estilizei dois elementos ao mesmo tempo */
+h1, h2 {
+    color: #1f3c88;
+}
+/* Seletor de classe */
+.bloco {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* Pseudo classes */
+a {
+    color: orangered;
+}
+/* estiliza links não visitados */
+a:link {
+    color: blue;
+}
+/* estiliza links visitados */
+a:visited {
+    color: purple;
+}
+/* estiliza links que o mouse está por cima */
+a:hover {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* estiliza links que estão ativos (clicados por último) */
+a:active {
+    color: green;
+}
+/* estiliza botões quando o mouse está por cima */
+button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+/* estiliza botões quando estão ativos (clicados por último) */
+button:active {
+        transform: scale(1.1, 0.8);
+}
+/* estiliza campos de input atuais */
+input:focus {
+    outline: none;
+    border: 2px solid yellow;
+    background-color: azure;
+}
+/* estiliza campos de input obrigatórios */
+input:required {
+    border: 2px solid red;
+}
+/* estiliza campos de input válidos */
+input:valid {
+    border: 2px solid #ecfdf5;
+}
+/* estiliza campos de input inválidos */
+input:invalid {
+    border: 2px solid #fef2f2;
+}
+/* estiliza checkboxes e radio buttons selecionados */
+input:checked {
+    accent-color: green;
+}
+/* estiliza campos de input desativados/não editáveis */
+input:disabled {
+    background-color: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+/* estiliza o primeiro filho */
+.lista-exemplo li:first-child {
+    font: bold;
+    color: green;
+}
+/* estiliza o último filho */
+.lista-exemplo li:last-child {
+    font: bold;
+    color: orange;
+}
+/* estiliza qualquer filho */
+.lista-exemplo li:nth-child(3) {
+    font: bold;
+    color: #efe3c7;
+}
+/* estiliza elementos vazios */
+.caixa-vazia:empty {
+    background-color: #e5e7eb;
+    color: #6b7280;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed gray;
+    border-radius: 5px;
+}
+/* PSEUDO ELEMENTOS */
+/* estiliza o conteúdo antes do elemento */
+h2::before {
+    content: "✨";
+    color: #f7fc00;
+    font-size: 18px;
+}
+/* estiliza o conteúdo depois do elemento */
+h2::after {
+    content: "👌";
+    color: #f7fc00;
+    font-size: 18px;
+}
+/* estiliza o placeholder dos campos de input */
+input::placeholder {
+    color: #6b7280;
+    font-style: italic;
+}
+/* estiliza o texto selecionado */
+::selection {
+    background-color: yellow;
+    color: green;
+    font-size: bold;
+}
+/* estiliza os marcadores das listas */
+.lista-marker li::marker {
+    color: orange;
+    font-size: 20px;
+}
