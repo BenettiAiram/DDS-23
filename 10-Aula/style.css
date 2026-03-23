@@ -1,0 +1,31 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+.icons{
+    color: red;
+    font-size: 120px;
+    padding: 2px;
+}
+.icons:hover{
+    color: white;
+    background-color: red;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.icons2{
+    color: yellow;
+    background-color: green;
+    font-size: 60px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.icons2:hover{
+    color: green;
+    background-color: yellow;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}

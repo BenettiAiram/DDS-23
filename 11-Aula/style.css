@@ -1,0 +1,57 @@
+body{
+    background-color: azure;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+#grid{
+    background-color: blue;
+    height: 900px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 2fr 1fr;
+    grid-gap: 10px;
+    /* tabela = itens */
+    justify-items: center; /* start center end */
+    align-items: center; /* start center end */
+}
+.quad{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-shadow: 5px 5px black;
+}
+#quad1{
+    background-color: red;
+}
+#quad2{
+    background-color: yellow;
+}
+#quad3{
+    background-color: green;
+}
+#grid2{
+    display: grid;
+    background-color: burlywood;
+    grid-template: 200px 500px 100px / auto 65%;
+    grid-gap: 10px;
+    grid-template-areas:"cabecalho cabecalho"
+    "menu-lateral principal"
+    "rodape rodape";
+}
+#cabecalho{
+    background-color: purple;
+    /* grid area diz onde vai ficar */
+    grid-area: cabecalho;
+}
+#menu-lateral{
+    background-color:brown;
+    grid-area: menu-lateral;
+}
+#principal{
+    background-color: yellowgreen;
+    grid-area: principal;
+}
+#rodape{
+    background-color: gray;
+    grid-area: rodape;
+}
