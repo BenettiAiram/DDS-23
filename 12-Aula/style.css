@@ -6,6 +6,7 @@
     padding: 0;
 }
 /* PERSONALIZAÇÃO */
+
 /* Header */
 body{
     font-family: "Inter", sans-serif;
@@ -63,6 +64,7 @@ a{
     background-color: #1e293b;
     border: #f4f6fb 1px solid;
 }
+
 /* Main */
 #inicio{
     background-position: center;
@@ -112,7 +114,7 @@ a{
     box-shadow: 0px 15px 40px black;
     align-items: center;
 }
-/* Botões - inline-block */
+/* Botões - Inline-block */
 .idol-acoes{
     font-size: 1.5rem;
     gap: 20px;
@@ -133,6 +135,133 @@ a{
     background-color: #e5e7eb;
     color: black;
 }
+.secao{
+    padding: 30px 0 50px 0;
+}
+.titulo-secao{
+    margin-bottom: 25px;
+}
+.titulo-secao h2{
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 8px;
+}
+.titulo-secao p{
+    font-size: 1.2rem;
+    color: #4b5563;
+}
+/* Block */
+.bloco-historia{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px lightgray;
+}
+.caixa-block{
+    background: linear-gradient(135deg, #5ec4d1, #7945be);
+    color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+/* Inline e Inline-block */
+.linha-ex, .linha-cards-inlineblock{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 30px black;
+}
+.linha-ex{
+    margin-bottom: 20px;
+}
+.texto-ex{
+    font-size: 1rem;
+}
+.item-inline{
+    display: inline;
+    background-color: #fdbbbb;
+    color: #dc2626;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+/* Cards Azuis */
+.card-inlineblock{
+    display: inline-block;
+    width: 27%;
+    min-height: 190px;
+    margin-right: 2%;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    border-radius: 15px;
+    padding: 20px;
+}
+.card-inlineblock h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card-inlineblock p{
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+/* Flex */
+.lista-carreira{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card-carreira{
+    flex: 1 1 260px;
+    background-color: white;
+    color: #1f2937;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px lightgray;
+}
+.card-carreira img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.card-carreira h3{
+    font-size: 1.3rem;
+    color: #111827;
+    margin-bottom: 10px;
+    padding: 20px 20px 10px;
+}
+.card-carreira p{
+    color: #6b7280;
+    margin-bottom: 10px;
+    padding: 0px 20px 10px;
+}
+.painel-titulos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.item-titulo{
+    background-color: white;
+    color: #3730a3;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 10px 30px lightgray;
+}
+.item-titulo h3{
+    font-size: 1.3rem;
+    color: #b91c1c;
+    margin-bottom: 10px;
+}
+.item-titulo p{
+    font-size: 0.8rem;
+    color: #4b5536;
+}
+
 /* Footer */
 .rodape{
     margin-top: 50px;
@@ -149,4 +278,44 @@ a{
     color: #d1d5db;
     margin-bottom: 15px;
     font-size: 1.2rem;
+}
+
+/* P/ Tablet */
+@media screen and (max-width: 1000px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .painel-titulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-inlineblock {
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 10px;
+    }
+}
+/* P/ Mobile */
+@media screen and (max-width: 600px) {
+    .navegacao {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .painel-titulos, .rodape-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-inlineblock {
+        display: block;
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .rodape-grid {
+        text-align: center;
+        justify-items: center;
+    }
 }
